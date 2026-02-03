@@ -1,0 +1,56 @@
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+void ins(listacdn l, int p, int v){
+int tamanho=tam(l);
+NODO* aux,novo;
+	if(p<1||p>tamanho+1){
+		printf("erro ao alocar");
+		exit(1);}
+	novo=(NODO*)malloc(sizeof(NODO));
+	if(!novo){
+	printf"(erro ao alocar);
+	exit(2);	}
+	if(k>(tamanho)/2){
+		p=tamanho-p;;
+		for(aux=l;p>1;p--,aux=aux->ant);
+		novo->prox=aux;
+		novo->ant=aux->ant;
+		aux->ant=novo;
+		novo->ant->prox=novo;
+	}else{
+		for(aux=l->prox;p>1;p--,aux=aux->prox);
+		novo->ant=aux;
+		novo->prox=aux-prox;
+		aux->prox=novo;
+		novo->prox->ant=novo;
+		}
+l->inf++;
+
+
+void recup(listacdn l, int p){
+NODO* aux;
+
+if(p<1||p>l->inf){
+printf("erro de posição");
+exit(1);}
+
+if(k<=tam(l)/2){
+for(aux=l;p>0;p--,aux=aux->prox);
+}else{
+for(aux=l;p<=l->inf;p++,aux=aux->ant);
+}
+return(aux->inf);}
+
+void ret(listacdn l, int p){
+NODO* aux;
+if(p<1||p>l->inf){
+printf("erro de posição");
+exit(1);}
+
+if(p>tam(l)/2){
+	for(aux=l;k<=tam(l);p++,aux=aux->ant);
+}
+}
+
+}
+
+}
